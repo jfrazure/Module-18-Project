@@ -49,7 +49,11 @@ import hashlib
 # @TODO
 # Create a Record Data Class that consists of the `sender`, `receiver`, and
 # `amount` attributes
-# YOUR CODE HERE
+@dataclass
+class Record:
+    sender: str
+    receiver: str
+    amount: float
 
 
 ################################################################################
@@ -61,7 +65,6 @@ import hashlib
 # previous section. To do so, complete the following steps:
 # 1. In the `Block` class, rename the `data` attribute to `record`.
 # 2. Set the data type of the `record` attribute to `Record`.
-
 
 @dataclass
 class Block:
@@ -139,7 +142,7 @@ class PyChain:
 # Adds the cache decorator for Streamlit
 
 
-@st.cache(allow_output_mutation=True)
+@st.cache_resource()
 def setup():
     print("Initializing Chain")
     return PyChain([Block("Genesis", 0)])
@@ -166,19 +169,19 @@ pychain = setup()
 
 # @TODO:
 # Delete the `input_data` variable from the Streamlit interface.
-input_data = st.text_input("Block Data")
+# input_data = st.text_input("Block Data")
 
 # @TODO:
 # Add an input area where you can get a value for `sender` from the user.
-# YOUR CODE HERE
+sender = st.text_input("Sender")
 
 # @TODO:
 # Add an input area where you can get a value for `receiver` from the user.
-# YOUR CODE HERE
+receiver = st.text_input("Receiver")
 
 # @TODO:
 # Add an input area where you can get a value for `amount` from the user.
-# YOUR CODE HERE
+amount = st.text_input("Amount")
 
 if st.button("Add Block"):
     prev_block = pychain.chain[-1]

@@ -96,6 +96,10 @@ You’ll upload the Python file for this assignment to your GitHub repository.
 
 * Make sure to update the `README.md` file to include an explanation of the Steamlit application, a screenshot or video of your deployed Streamlit application, and any other information that’s needed to interact with your project.
 
+![Test Image 1](pychain_error_image.png)
+
+*** AS YOU CAN SEE IN THE IMAGE FILE, I COULD NOT ADD BLOCKS OR DO ANYTHING PAST THAT PARTICULAR STEP.  I AM WORKING TO RESOLVE THE ISSUE, BUT I HAVE TO TURN THIS PART IN INCOMPLETE.  I HAVE BEEN FIGHTING MASSIVE TECHNICAL ISSUES SINCE THE BEGINNING OF THE BLOCKCHAIN UNIT BEGAN, AND FOR EVERY ONE WE FIX, 2-3 MORE SEEM TO POP UP.  I AM FRUSTRATED AND NOT SURE WHAT I CAN DO AT THIS POINT ***
+
 * Submit the link to your GitHub project to Bootcamp Spot.
 
 ---
